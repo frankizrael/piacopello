@@ -1,0 +1,37 @@
+/* Imports */
+@import "fonts";
+@import "variables";
+@import "main";
+@import "buttons";
+@import "titles";
+@import "content";
+@import "navigation";
+@import "form";
+body {
+    padding: 0px;
+    margin: 0px;
+    background-image: url("../assets/background.png");
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+p, ul, li {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+p, a, input, input::placeholder {
+    font-family: 'Poppins', sans-serif;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'chaviera';
+    margin: 0px;
+    padding: 0px;
+}
+a {
+    text-decoration: none;
+    color: #1D1D1B;
+}
+.x-container {
+    max-width: 1400px;
+    margin: auto;
+}

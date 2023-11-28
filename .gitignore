@@ -1,0 +1,7 @@
+*.log
+.idea/
+.DS_Store
+/nbproject/*
+/.vscode/
+node_modules
+.files-deploy

@@ -1,0 +1,311 @@
+
+@import "utilities";
+@import "variables";
+
+.subtitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    position: relative;
+    .content {
+        font-size: 45px;
+        font-weight: 700;
+    }
+    .buttonsadd {
+        display: flex;
+        align-items: center;
+        svg {
+            display: block;
+        }
+        .minepagination {
+            padding: 0px 25px;
+            .swiper-pagination-bullet {
+                background: black;
+                margin: 0px 5px;
+            }
+        }
+        .buttonleft {
+            width: 37px;
+            overflow: hidden;
+            cursor: pointer;
+            &.swiper-button-disabled {
+                pointer-events: none;
+                opacity: 0.3;
+            }
+        }
+        .buttonright {
+            width: 37px;
+            overflow: hidden;
+            cursor: pointer;
+            &.swiper-button-disabled {
+                pointer-events: none;
+                opacity: 0.3;
+            }
+            svg {
+                position: relative;
+                right: 140px;
+            }
+        }
+    }
+}
+
+.productsvendidoClass {    
+    position: relative;
+    padding-bottom: 60px;
+    &:before {
+        content: '';
+        width: calc(50vw - 700px - 30px);
+        left: calc(700px - 50vw);
+        top: 33px;
+        background: #000;
+        height: 1px;
+        position: absolute;
+        opacity: 0.5; 
+    }
+}
+
+.myproductsSend {
+    margin-top: 150px;
+    padding-top: 60px;
+}
+
+.woocommerce .woocommerce-breadcrumb i {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-bottom: solid 1px #B89157;
+    border-right: solid 1px #B89157;
+    transform: rotate(-45deg);
+    position: relative;
+    top: -1px;
+    margin: 0px 6px;
+}
+.woocommerce .woocommerce-breadcrumb a {
+    color: black !important;
+}
+.woocommerce .woocommerce-breadcrumb {
+    border-bottom: solid 1px #cfcfcf;
+    color: #8E8E8E !important;
+    padding-bottom: 10px !important;
+    margin-bottom: 30px !important;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs {
+    display: none !important;
+}
+.woocommerce div.product .woocommerce-tabs .panel {
+    display: none !important;
+}
+.woocommerce div.product .product_title {
+    font-family: 'Poppins';
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.woocommerce div.product div.summary .price .amount {
+    font-weight: 700;
+}
+.woocommerce div.product div.summary .price {
+    color: black !important;
+    font-size: 20px;
+    margin-bottom: 5px !important;
+}
+.skuwoocommerce {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.woocommerce div.product .stock {
+    color: #594950 !important;
+    font-size: 12px;
+    border-radius: 20px;
+    border: 1px solid #E2C9D4;
+    background: #F2E7EC;
+    max-width: 220px;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 25px;
+}
+
+.atributes {
+    display: flex;
+    justify-content: space-between;
+    .atribute {
+        border-radius: 20px;
+        border: 1px solid #E3E1E1;
+        background: #F8F8F8;
+        width: calc(50% - 10px);
+        padding: 15px 25px;
+        box-sizing: border-box;
+        .mystitle {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        ul {
+            display: flex;
+            li {
+                text-align: center;
+                min-width: 60px;
+                margin-right: 10px;
+                padding: 5px;
+                border: solid 1px #ffffff00;
+                border-radius: 7px;
+                cursor: pointer;
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+.spinner {
+    display: flex;
+    align-items: center;
+    border: solid 1px black;
+    border-radius: 15px;
+    padding: 4px 8px;
+    background: white;
+    div {
+        cursor: pointer;
+        width: 20px;
+        text-align: center;
+        &.quantity {
+            float: none !important;
+            margin: 0px !important;
+            width: 80px;
+        }
+    }
+    input {
+        text-align: center !important;
+        width: 80px !important;
+        border: none;
+        padding: 0px;
+    }
+}
+input[type="number"] {
+    /* Restablece estilos específicos del tipo "number" aquí */
+    -moz-appearance: textfield;
+  }
+/* Si es necesario, puede ser necesario agregar estilos adicionales para otros navegadores */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+form.cart.cartFlex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    &:after, &:before {
+        display: none !important;
+    }
+    .btnBlack {
+        width: calc(100% - 158px);
+    }
+}
+
+.mainProducts {
+    margin-top: 150px;
+    margin-bottom: 60px;
+    padding-top: 40px;
+    .wootitle {
+        h1 {
+            color: #000;
+            font-family: "Poppins";
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+    }
+    .mainflex {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        .filters {
+            width: 365px;
+            flex: none;
+            box-sizing: border-box;
+            border-radius: 20px;
+            background: #FFF;
+            box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.07);
+            padding: 25px;
+            aside {
+                h2 {
+                    font-family: 'Poppins';
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                }
+                .listCheckbox {
+                    li {
+                        overflow: hidden;
+                        position: relative;
+                        input {
+                            position: absolute;
+                            top: 6px;
+                            opacity: 0;
+                        }
+                        label {
+                            position: relative;
+                            padding-left: 30px;
+                            font-size: 16px;
+                            line-height: 35px;
+                            cursor: pointer;
+                            &:before {
+                                content: '';
+                                position: absolute;
+                                width: 20px;
+                                height: 20px;
+                                border-radius: 4px;
+                                background: #EEECEA;
+                                left: 0;
+                                top: 2px;
+                            }
+                            &:after {
+                                content: '';
+                                position: absolute;
+                                width: 4px;
+                                height: 12px;
+                                border-bottom: solid 2px white;
+                                border-right: solid 2px white;
+                                left: 7px;
+                                transform: rotate(45deg);
+                                top: 4px;
+                                opacity: 0;
+                            }
+                        }
+                        input:checked + label:before {
+                            background: #B57F2E;
+                        }
+                        input:checked + label:after {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+        .products {
+            width: calc(100% - 385px);
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                &:before, &:after {
+                    display: none;
+                }
+                li {
+                    width: calc(33.33% - 20px);
+                    margin-bottom: 10px;
+                    margin-right: 20px;
+                    .myproduct__addcart .priceInto .spinner input {
+                        width: 40px !important;
+                    }
+                }
+            }
+        }
+    }
+}	
